@@ -2,6 +2,8 @@
 
 Popup dialog with slide mechanism.
 
+![Gif Example](https://raw.githubusercontent.com/dhimasdewanto/slide_popup_dialog/master/readme_screenshot/example.gif)
+
 ## Code Example
 
 ```

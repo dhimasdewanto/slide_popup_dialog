@@ -1,8 +1,8 @@
 name: slide_popup_dialog
-description: A new Flutter package project.
+description: Popup dialog with slide mechanism.
 version: 0.0.1
-author:
-homepage:
+author: Dhimas Dewanto
+homepage: https://github.com/dhimasdewanto/slide_popup_dialog
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

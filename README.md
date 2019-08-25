@@ -1,8 +1,28 @@
 # slide_popup_dialog
 
-Popup dialog with slide mechanism.
+Popup dialog with slide mechanism. Use it like AlertDialog or SimpleDialog.
 
 ![Gif Example](https://raw.githubusercontent.com/dhimasdewanto/slide_popup_dialog/master/readme_screenshot/example.gif)
+
+## How to use
+
+1. Add slide_popup_dialog to your package's pubspec.yaml, then intall it.
+
+2. Import package.
+
+```
+import 'package:slide_popup_dialog/slide_popup_dialog.dart' as slideDialog;
+```
+
+3. Add this method to your State Widget.
+```
+void _showDialog() {
+  slideDialog.showSlideDialog(
+    context: context,
+    child: Text("Hello World"),
+  );
+}
+```
 
 ## Code Example
 
@@ -33,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _showDialog() {
-    slide_popup.showSlideDialog(
+    slideDialog.showSlideDialog(
       context: context,
       child: Text("Hello World"),
       barrierColor: Colors.white.withOpacity(0.7),
@@ -43,3 +63,5 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+![Gif Example](https://raw.githubusercontent.com/dhimasdewanto/slide_popup_dialog/master/readme_screenshot/more_example.gif)

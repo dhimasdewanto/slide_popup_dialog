@@ -1,5 +1,5 @@
 name: slide_popup_dialog
-description: Popup dialog with slide mechanism.
+description: Popup dialog with slide mechanism. Informs the user about situations that require acknowledgement. Use it like AlertDialog or SimpleDialog.
 version: 0.0.1
 author: Dhimas Dewanto<dhimasbrd@gmail.com>
 homepage: https://github.com/dhimasdewanto/slide_popup_dialog

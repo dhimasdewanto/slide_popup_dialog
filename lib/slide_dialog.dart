@@ -4,6 +4,7 @@ import './pill_gesture.dart';
 
 class SlideDialog extends StatefulWidget {
   final Widget child;
+  final double childHeight;
   final Color backgroundColor;
   final Color pillColor;
 
@@ -11,6 +12,7 @@ class SlideDialog extends StatefulWidget {
     @required this.child,
     @required this.pillColor,
     @required this.backgroundColor,
+    this.childHeight 
   });
 
   @override
@@ -28,7 +30,7 @@ class _SlideDialogState extends State<SlideDialog> {
 
     return AnimatedPadding(
       padding: MediaQuery.of(context).viewInsets +
-          EdgeInsets.only(top: deviceHeight / 3.0 + _currentPosition),
+          EdgeInsets.only(top: deviceHeight - (widget.childHeight ?? (deviceHeight / 2)) + _currentPosition),
       duration: Duration(milliseconds: 100),
       curve: Curves.decelerate,
       child: MediaQuery.removeViewInsets(
@@ -40,7 +42,7 @@ class _SlideDialogState extends State<SlideDialog> {
         child: Center(
           child: Container(
             width: deviceWidth,
-            height: deviceHeight / 1.5,
+            height: widget.childHeight ?? (deviceHeight / 2) ,
             child: Material(
               color: widget.backgroundColor ??
                   Theme.of(context).dialogBackgroundColor,

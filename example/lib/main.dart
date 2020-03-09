@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // barrierColor: Colors.white.withOpacity(0.7),
       // pillColor: Colors.red,
       // backgroundColor: Colors.yellow,
+      //childHeight: 600,
     );
   }
 }
